@@ -1,0 +1,8 @@
+Package: MorphoInd
+Version: 0.1
+Date: 2020-05-12
+Title: Simpsons LSI and Uerpmanns VSI
+Description: LSI, VSI and bootstraps computation
+Author: Samuel Ginot <ginotsam@gmail.com>, Gilles Escarguel <gilles.escarguel@univ-lyon1.fr>
+Maintainer: Samuel Ginot <ginotsam@gmail.com>
+RoxygenNote: 7.1.0
