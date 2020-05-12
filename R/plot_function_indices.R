@@ -1,4 +1,4 @@
-#' Plotting function for 'morpho.ind' outputs
+#' Plotting function for 'morpho_indices' outputs
 #'
 #' @param dat Data is the output from function morpho.indices().
 #' @param name Character vector of names for ALL samples INCLUDING reference.
@@ -23,8 +23,9 @@
 #' @param xlab, ylab As for standard 'plot'.
 #' @param tick.labels Labels for tickmarks.
 #'
+#' @export
 
-plot.mo.ind <- function(dat=dat, 
+plot_mo_ind <- function(dat=dat, 
                         name=name, 
                         ref=1, 
                         samp=name[-ref], 
@@ -110,7 +111,6 @@ N.d <- dim(dfs)[2]
    }
 
    if (CI) {
-   require(scales)
 
    plot(dfs[ref,], ylim = c(min(unlist(CIs[samp])), max(unlist(CIs[samp]))), type="n", xlab=xlab, ylab=ylab, xaxt="n", las=2)
    axis(side=1, labels=tick.labels, at=1:N.d, las=2)

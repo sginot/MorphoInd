@@ -41,10 +41,12 @@
 #' @return VSI.sdboot Same as previous for VSI.
 #' @return VSI2.sdboot Same as previous for VSI2.
 #'
+#' @export
 #' @examples
-#' o <- morpho.indices(dat=dat, ref=1, data.type="both", which.ind=c(1,2,8,10), bootstrap="p", plot=T) #This will compute LSI, VSI and VSI2 value, parametric bootstrap values, CIs, and plots.
+#' morpho_indices(dat=dat, ref=1, data.type="both", which.ind=c(1,2,8,10), bootstrap="p", plot=T) #This will compute LSI, VSI and VSI2 value, parametric bootstrap values, CIs, and plots.
 
-morpho.indices <- function(
+
+morpho_indices <- function(
 	dat = data.list, 
 	ref = 1, 
 	k = 25, 

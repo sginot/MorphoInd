@@ -1,8 +1,10 @@
-#' Combining outputs from separate runs of function 'morpho.ind'
+#' Combining outputs from separate runs of function 'morpho_indices'
 #'
-#' This is to be used ONLY if both runs had the same reference sample. Generally it wwill be used when mixed data is used and one run of morpho.ind will have parametric bootstraps while the other has non-parametric bootstrap.
+#' This is to be used ONLY if both runs had the same reference sample. Generally it wwill be used when mixed data is used and one run of morpho_indices will have parametric bootstraps while the other has non-parametric bootstrap.
+#'
+#' @export
 
-combin.mo.ind <- function(out1=out1, out2=out2) {
+combin_mo_ind <- function(out1=out1, out2=out2) {
 
 out.combin <- vector("list", length=length(out1))
 
