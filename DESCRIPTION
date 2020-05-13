@@ -4,7 +4,7 @@ Date: 2020-05-12
 Title: Simpsons LSI and Uerpmanns VSI
 Author: Samuel Ginot <ginotsam@gmail.com>, Gilles Escarguel <gilles.escarguel@univ-lyon1.fr>
 Maintainer: Samuel Ginot <ginotsam@gmail.com>
-Depends: scales
+Depends: R (>= 3.6.0), scales, rlang (>= 0.4.6)
 Description: Computes LSI, VSI and VSI*, with associated bootstrap values, confidence intervals, etc. Other functions are a plotting utility and an merging function for outputs of the computing function.
 License: GPL (>= 2)
 RoxygenNote: 7.1.0
