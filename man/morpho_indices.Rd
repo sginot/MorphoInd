@@ -99,5 +99,7 @@ The function can be used with: List of matrices (samples x individuals x measure
 The function includes parametric and non-parametric bootstraps, this allows to test differences between samples. Tests can be global first then check which measurement matters.
 }
 \examples{
-morpho_indices(dat=dat, ref=1, data.type="both", which.ind=c(1,2,8,10), bootstrap="p", plot=T) #This will compute LSI, VSI and VSI2 value, parametric bootstrap values, CIs, and plots.
+data("equus", package="MorphoInd")
+o <- morpho_indices(dat=equus, ref=1, data.type="summary", bootstrap="p", plot=F) #This will compute LSI, VSI and VSI2 value, parametric bootstrap values, CIs and mISD.
+plot_mo_ind(dat=o, name=names(equus), ref=1, samp=c(2:5), index="VSI", CI=T, plot.mISD=F) #Example of plot with selected samples (2:5) and CIs.
 }
