@@ -65,6 +65,8 @@ morpho_indices <- function(
 	) {
 
    if (!is.list(dat)) {stop("Dataset must be a list")}
+   if (!bootstrap %in% c('off','np','p')) {stop("Incorrect value specified for argument bootstrap. Please choose between 'off' (no bootstrap), 'np' (non-parametric bootstrap, only if data.type='individuals), or 'p' (parametric bootstrap).")}
+   if (bootstrap=="off" & center.mISD) {stop("mISD can only be computed if bootstrap is activated.")}
    if (!data.type %in% c('summary', 'individuals', 'both')) {stop("Data type specified incorrectly: argument 'data.type' must be one of 'summary', 'individuals', 'both'.")}
 
    N.descriptors <- length(which.desc)
