@@ -7,4 +7,4 @@ Maintainer: Samuel Ginot <ginotsam@gmail.com>
 Depends: R (>= 3.6.0), scales, rlang (>= 0.4.6)
 Description: Computes LSI, VSI and VSI*, with associated bootstrap values, confidence intervals, etc. Other functions are a plotting utility and an merging function for outputs of the computing function.
 License: GPL (>= 2)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
